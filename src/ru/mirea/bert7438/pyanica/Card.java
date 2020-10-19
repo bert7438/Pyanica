@@ -9,6 +9,13 @@ public class Card implements Comparable<Card>{
         else throw new Exception("Card must have value from 0 to 9");
     }
 
+    @Override
+    public String toString() {
+        return "Card{" +
+                 value +
+                '}';
+    }
+
     public Card(){
         this.value = (byte) (Math.random()*9);
     }
