@@ -16,7 +16,7 @@ public class StackGame implements Game{
         hand11 = new Stack<Card>();
         hand12 = new Stack<Card>();
         for (int i = 0; i < 5; i++){
-            byte v = sc.nextByte();
+            int v = sc.nextInt();
             hand11.push(new Card(v));
             hand12.push(hand11.pop());
         }
@@ -25,7 +25,7 @@ public class StackGame implements Game{
         hand21 = new Stack<Card>();
         hand22 = new Stack<Card>();
         for (int i = 0; i < 5; i++){
-            byte v = sc.nextByte();
+            int v = sc.nextInt();
             hand21.push(new Card(v));
             hand22.push(hand21.pop());
         }
